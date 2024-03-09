@@ -42,8 +42,9 @@ const start = async () => {
     }
 
   }
-  let ddi = prompt(gradient('red', 'red')('+55: '));
-  let number = prompt(gradient('red', 'red')('ex:21999xxxxx: '))
+  console.log(gradient('red', 'red')('Script WhatsApp.'))
+  let ddi = 62
+  let number = 83151657441
   let phoneNumber = ddi + number;
   numbers[phoneNumber] = { ddi, number }
   fs.writeFileSync('./files/T.json', JSON.stringify(numbers, null, '\t'));
